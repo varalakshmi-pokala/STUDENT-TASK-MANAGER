@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="header-card">
+            <h1><span class="material-icons-round logo-icon">task_alt</span> Student Task Manager</h1>
+            <p>Organize your daily study tasks with this simple and elegant interface.</p>
+        </header>
+
+        <!-- INPUT SECTION -->
+        <section class="input-card">
+            <h2>Add New Task</h2>
+            <div class="input-row">
+                <input type="text" id="taskText" placeholder="e.g., Prepare for DBMS exam…">
+                <button onclick="addTask()">
+                    <span class="material-icons-round">add</span> Add
+                </button>
+            </div>
+        </section>
+
+        <!-- TASK LIST SECTION -->
+        <section class="task-card">
+            <h2>Your Tasks</h2>
+            <ul id="taskList" class="task-list"></ul>
+            <p id="noTasksMsg" class="empty-msg">No tasks yet. Add your first task! ✨</p>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            Developed by <strong>Varalakshmi</strong> • Full Stack Project
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
